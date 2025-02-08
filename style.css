@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Rubik:wght@300;400;500&display=swap');
+html{
+    height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to left, red, blue,green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+}
+.wrapper{
+    background-color: #FFFFFF;
+    border: 1px solid #DDBEAA;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgba(26, 129, 57, 0.945);
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#title{
+    padding: 10px 5px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container{
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    border: none;
+}
+.container h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.container h3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button-box{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    padding: 5px 5px;
+}
+#start-timer, #pause-timer, #reset-timer, #set-lap{
+    width: 100%;
+    padding: 10px;
+    background: #E5E3E4;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+#start-timer:hover, #pause-timer:hover, #reset-timer:hover, #set-lap:hover{
+    background: rgba(26, 129, 57, 0.945);
+}
+
+#laps{
+    width: 325px;
+    height: 30vh;
+    position: fixed;
+    overflow-y: scroll;
+    border: 1px solid #DDBEAA;
+    background-color: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(26, 129, 57, 0.945);
+    border-radius: 5px;
+    margin-top: 5px;
+}
+#laps::-webkit-scrollbar{
+    display: none;
+}
+
+#laps li{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.clock {
+    width: 50%;
+    height: 10rem;
+    border: 2px solid #282828;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 190px 190px;
+    background-image: url('/watch2.png');
+}
+
+.bar{
+    width: 50%;
+    right: 50%;
+    height: 6px;
+    position: absolute;
+    top: 32%;
+    border-radius: 6px;
+    background: #61afff;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    
+}
+.hour-bar{
+    width: 50px;
+    height: 6px;
+    z-index: 3;
+}
+.minute-bar{
+    width: 60px;
+    height: 4px;
+    z-index: 10;
+}
+.second-bar{
+    width: 70px;
+    height: 2px;
+    background-color: #ee791a;
+}
+.milis-bar{
+    width: 80px;
+    height: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* @keyframes bar{
+    0%{height: 0; transform: rotate(0deg);}
+    30%{height: 100px; transform: rotate(0deg);}
+    70%{height: 100px; transform: rotate(180deg);}
+    100%{height: 0; transform: rotate(180deg);}
+} *//* animation-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1); */
